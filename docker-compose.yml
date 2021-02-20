@@ -11,14 +11,18 @@ services:
     ports:
     - 80:80
 
+  javamelody:
+    image: javamelody
+    ports:
+    - 1337:1337
+
   postgres:
     image: postgres:9.6.6
     environment:
       - POSTGRES_PASSWORD=1234
       - POSTGRES_USER=postgres
+      - POSTGRES_PORT=5432
       - POSTGRES_DB=javamelodydb
-    ports:
-    - 5432:5432
   sales-core:
     image: cuba-sample-sales-core
     environment:
