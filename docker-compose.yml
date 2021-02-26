@@ -27,6 +27,7 @@ services:
       - CUBA_DATASOURCE_HOST=postgres
       - CUBA_DATASOURCE_PORT=5432
       - CUBA_DATASOURCE_PASSWORD=1234
+      - CUBA_DATASOURCE_JDBCURL=jdbc:postgresql://postgres:5432/javamelodydb
       - CUBA_DATASOURCE_USER=postgres
       - CUBA_DATASOURCE_DBNAME=javamelodydb
       - CUBA_CLUSTER_ENABLED=true
@@ -43,6 +44,7 @@ services:
       - CUBA_DATASOURCE_HOST=postgres
       - CUBA_DATASOURCE_PORT=5432
       - CUBA_DATASOURCE_PASSWORD=1234
+      - CUBA_DATASOURCE_JDBCURL=jdbc:postgresql://postgres:5432/javamelodydb
       - CUBA_DATASOURCE_USER=postgres
       - CUBA_DATASOURCE_DBNAME=javamelodydb
       - CUBA_CLUSTER_ENABLED=true
